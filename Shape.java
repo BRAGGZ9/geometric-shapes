@@ -1,24 +1,20 @@
-// Shape class
-public class Shape {
-    private Posn center;
+public abstract class Shape {
+    protected Posn center;
 
     public Shape(Posn center) {
         this.center = center;
     }
 
+    public abstract double perimeter();
+
+    public abstract double area();
+
+    public boolean contains(Posn p) {
+        // Implement this method in each subclass
+        return false;
+    }
+
     public Posn getCenter() {
         return center;
-    }
-
-    public double perimeter() {
-        return 0.0;
-    }
-
-    public double area() {
-        return 0.0;
-    }
-
-    public boolean contains(Posn posn) {
-        return false;
     }
 }

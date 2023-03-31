@@ -1,6 +1,7 @@
 // Square class
 public class Square extends Shape {
     private double side;
+    private Posn center;
 
     public Square(Posn center, double side) {
         super(center);
@@ -25,6 +26,6 @@ public class Square extends Shape {
     public boolean contains(Posn posn) {
         double halfSide = side / 2;
         return posn.getX() >= center.getX() - halfSide && posn.getX() <= center.getX() + halfSide
-                && posn.getY() >= center.getY() - halfSide && posn.getY() <= center.getY() + halfSide;
+                && posn.getX() >= center.getX() - halfSide && posn.getX() <= center.getX() + halfSide;
     }
 }

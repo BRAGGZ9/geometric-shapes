@@ -1,18 +1,13 @@
-// Posn class
 public class Posn {
-    private int x;
-    private int y;
+    public double x;
+    public double y;
 
-    public Posn(int x, int y) {
+    public Posn(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
     public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
+        return 0;
     }
 }
