@@ -1,2 +1,2 @@
 # geometric-shapes
-This repository contains classes for squares, rectangles, and circles.
+This repository contains a Java implementation of classes for squares, rectangles, and circles, along with methods for calculating their perimeter, area, and testing point containment. The code is organized into separate classes for each shape, with a base Shape class that defines common properties and methods. The library is designed to provide a simple and intuitive API for working with geometric shapes in Java.
